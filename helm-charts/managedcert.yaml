@@ -1,0 +1,7 @@
+  apiVersion: networking.gke.io/v1
+  kind: ManagedCertificate
+  metadata:
+    name: sap-ui-poc-tls
+  spec:
+    domains:
+      - sap-poc.endpoints.pub-sap-sbx-poc-406406.cloud.goog

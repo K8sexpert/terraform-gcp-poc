@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    iam.gke.io/gcp-service-account: sa-terraform@pub-sap-sbx-poc-406406.iam.gserviceaccount.com
+  name: ksa-terraform
