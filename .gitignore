@@ -3,3 +3,4 @@
 *.tfstate.*
 
 *.terraform.lock.hcl
+*.pub-sap-sbx-poc-406406-4de1dd040119.json

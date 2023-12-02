@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pub-sap-sbx-poc-406406",
+  "private_key_id": "4de1dd0401193441a4a200c85d6726ea6a44718d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCgwoGUOEGPujmM\nFzagmraA8zXVichxyuPAD1RQh+e+NbdknUJ+i1CZCLl84m81JwwrkmkoyPLQrxk6\nzPjgfhcL9SrZ4+fm39FImOhYJRci895oOPD7xto8hnQwZkVp5XzQzu+vDDONsrNe\nQ4aKUgNKapN30TiNMhByNHMd4GgiL3vZaTJx1VxjWkKPWiw/0VItiHcRAkq5FuJ3\n4nuje7PhEiLQTf8pUSM6tSs8ov/NTRWCkUTawRGttKjg22KFcn4Cl1XP4cPzhn2O\nx7HASk7V5QfoIXSASIignMFDfud2l05m/6OWaCzdtEMy4K+566HqzopQq0hXGJCO\nmmGFIxYTAgMBAAECggEAAobMDo5LyXx9xwveWevUjnZEFFUUB2XO6ofTJWjdZYnm\nlfg6wU5jN+SBNctBQC6a7FxitrdhyZHW7aunBbA1oIR75ezFCkXePivZCvmaQXxf\ntHegofRgHa9nSBNzZ9Spf4ahEbk5XjK+yu54wNfFIXhHVQy+vMlapNDaNk/+kvrx\nqZY1dHOAHqpWWGf5zjfd3Ie0ltUPBAVlY76D1wKTFcKAEfCysmwvnCop5mC7kgsW\nD1QYQ74pIbBhzKZ3lifxuu3M8xpFetNse+/h0KHiko+KGV1JRPZcezjR+xIYcRwy\nTWj/FnuG5W4vwKFcYpySVae6avxbE8jnPyqhuTYEUQKBgQDfBz/h203PnS6Wpz7T\nwf1/iyejeEIItj8S2EGEbITfnDQYYCbCkA9BXkEegj1PHKD7gFIkASHCFOkoG+Er\nQWMPHBhp63kXwEWcJrPuksNO2bM5DdUEFzdb/k/64Ouq2jK+HZa8lXkUq+GX127k\n0RM/a0ee6D26gnPMmlEwcSAmtQKBgQC4hqLXobmdIwMn/mVb7EMmix9uDqXzM/PL\nXQry2+TpEEd3MNUPFc6MxaS/i4OHPS9OmNNcinrOZDl8iUK7VhJxqnb/jR13u7pX\nYAhkGzWs3FpnuyKGt7Lds1/cx/ZHP0dhqIcZ1ggacS5WJvk+vN0e1oBwcyvsPgft\nMfR3NOI+pwKBgATP3Tr8RlOCaqzpctuSxetojzRhtdsGQ5oefFtlFADXF/Cmsm9k\nOFAKvpDv8m6wiXCjtiH8vEO5u8YXw+XxBTggPQ6b/ALdLSNPWnZ9SCV9YPaMK9po\nvdMIS6V4EN2g05Nyg/wRpYkipD1ocoYRVL77i5IMJLjPc7woYDQRXMY5AoGBAKJW\nyML+ZCcLm4Y++Htjozwwn2ka+AK7zRs38x7wODaW/NiunHMWE06jvypJGmELgiga\nqbC7oAkeAbk/pPbdZYKcnu56/tbM0MZ4FUnE6nb2sY6bA2gUCwei/I5nWZMa57jS\nJHGlbCGfO03OIe+BBuRPgFXt7VF8zUpvbYzGeNj3AoGAcNQ6KqNuycMLOqDban33\n9BKpVhatvZM7Und9CU6s7eHN2frABCglkdvOtQIhtAqW0q1dY1yN1dQOYLRBJYNg\nlYdRitHOyzODAlf/+s9cj+qbm7MzYOTviEGuiZqkPzJrk6F+5cCTFDCkIJR8hkn0\nE2fudlaOeOrG9MewCX3r0yg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sa-terraform@pub-sap-sbx-poc-406406.iam.gserviceaccount.com",
+  "client_id": "107143215298884930282",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sa-terraform%40pub-sap-sbx-poc-406406.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
