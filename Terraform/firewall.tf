@@ -2,6 +2,7 @@
 resource "google_compute_firewall" "private_subnet_firewall" {
   name      = "private-subnet-egress"
   network   = module.network.vpc-name
+  project      = "pub-sap-sbx-poc-406406"
 
     allow {
     protocol  = "tcp"
@@ -15,6 +16,7 @@ resource "google_compute_firewall" "private_subnet_firewall" {
 resource "google_compute_firewall" "iap_vm_firewall" {
   name            = "allow-ingress-from-iap"
   network         = module.network.vpc-name
+  project      = "pub-sap-sbx-poc-406406"
   enable_logging  = "true"
   direction       = "INGRESS"
 
