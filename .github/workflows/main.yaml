@@ -28,8 +28,8 @@ jobs:
 
     - name: Terraform Init
       run: terraform init #-var-file=variables.tfvars
-      with:
-        path: ./Terraform
+      # with:
+      #   path: ./Terraform
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
 
