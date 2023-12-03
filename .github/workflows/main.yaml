@@ -39,6 +39,20 @@ jobs:
       run: terraform plan #-var-file=variables.tfvars
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
+      post:
+        - name: Save Terraform Plan
+          uses: actions/upload-artifact@v2
+          with:
+            name: tfplan
+            path: tfplan
+    
+    - name: Manual Approval
+      id: approval
+      run: echo "::set-output name=approved::$(read -p 'Do you approve the Terraform plan? (yes/no): ' && [ "$REPLY" == "yes" ]')"
+
+    - name: Terraform Apply
+      if: steps.approval.outputs.approved == 'true'
+      run: terraform apply -var-file=variables.tfvars tfplan
 
     # - name: Terraform Apply
     #   run: terraform apply #-auto-approve -var-file=variables.tfvars
