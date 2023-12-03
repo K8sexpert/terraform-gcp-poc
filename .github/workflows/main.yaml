@@ -18,7 +18,7 @@ jobs:
       with:
         terraform_version: 1.0.0
       env:
-        TF_WORKSPACE: ./terraform/
+        TF_WORKSPACE: /Terraform/
 
     - name: Configure Google Cloud CLI
       uses: google-github-actions/setup-gcloud@main
