@@ -17,8 +17,7 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         terraform_version: 1.0.0
-      env:
-        TF_WORKSPACE: ./Terraform
+        path: ./Terraform
 
     # - name: Configure Google Cloud CLI
     #   uses: google-github-actions/setup-gcloud@v1
@@ -29,8 +28,9 @@ jobs:
 
     - name: Terraform Init
       run: terraform init #-var-file=variables.tfvars
+      with:
+        path: ./Terraform
       env:
-        TF_WORKSPACE: ./Terraform
         GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
 
 
