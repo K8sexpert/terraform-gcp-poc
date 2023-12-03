@@ -38,35 +38,6 @@ resource "google_compute_router_nat" "nat" {
   source_subnetwork_ip_ranges_to_nat  = var.source_subnetwork_ip_ranges_to_nat
 }
 
-# Create a firewall rule to allow egress traffic from the private subnet
-resource "google_compute_firewall" "private_subnet_firewall" {
-  name      = "private-subnet-egress"
-  network   = google_compute_network.sap_poc_vpc.id
-
-    allow {
-    protocol  = "tcp"
-    ports     = ["80"]
-  }
-
-  source_ranges   = ["10.20.8.0/24"]
-  target_tags     = ["sap-poc-node-pool"]
-}
-
-resource "google_compute_firewall" "iap_vm_firewall" {
-  name            = "allow-ingress-from-iap"
-  network         = google_compute_network.sap_poc_vpc.id
-  enable_logging  = "true"
-  direction       = "INGRESS"
-
-allow {
-    protocol    = "tcp"
-    ports       = ["22", "3389"]
-  }
-
-  source_ranges     = ["35.235.240.0/20"]
-  # target_tags       = ["sap-poc-instance"]
-}
-
 resource "google_compute_subnetwork" "subnetwork" {
 
   for_each                   = local.subnets
