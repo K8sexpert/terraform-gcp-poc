@@ -48,7 +48,7 @@ jobs:
     
     - name: Manual Approval
       id: approval
-      run: echo "::set-output name=approved::$(read -p 'Do you approve the Terraform plan? (yes/no)':  && [ "$REPLY" == "yes" ])"
+      run: echo "::set-output name=approved::$(read -p 'Do you approve the Terraform plan? (yes/no): ' && [ "$REPLY" == "yes" ])"
 
     - name: Terraform Apply
       if: steps.approval.outputs.approved == 'true'
